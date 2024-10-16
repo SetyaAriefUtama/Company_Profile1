@@ -1,0 +1,96 @@
+body {
+    background: rgb(21, 96, 182);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Start with 3 columns for larger screens */
+    margin: 30px;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid > article {
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 30px;
+    text-align: center;
+    background: white;
+    transition: transform 0.2s ease-in-out; /* Combined transitions */
+}
+
+.grid > article img {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+.konten {
+    padding: 10px;
+}
+
+.grid > article:hover {
+    transform: scale(1.05); /* Slightly reduce the hover effect for smaller screens */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and medium screens (768px and below) */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+    }
+
+    .grid > article {
+        padding: 15px;
+    }
+
+    .grid > article img {
+        width: 150px; /* Adjust the size of images on medium screens */
+    }
+}
+
+/* For small mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* One column layout for small screens */
+    }
+
+    .grid > article {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .grid > article img {
+        width: 100px; /* Adjust the size of images for small screens */
+    }
+}
+
+.gambar-3 .konten p, .gambar-3 .konten h2 {
+    color: black; /* Ensure text color is consistent */
+}
+/* Back to Home Button */
+.back-home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}

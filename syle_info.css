@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(39, 39, 98);
+
+}
+
+.login-box {
+   position: relative;
+    width: 400p;
+    background: blue
+
+}
+
+.login-box {
+    width: 100px;
+    padding: 0 50px;
+}
+
+h2 {
+    font-size: 2cm;
+    color: aqua;
+    text-align: center;
+
+}
+
+.input-box {
+    position: relative;
+    margin: 25px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 40px;
+    
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1cm;
+    color: aliceblue;
+    pointer-events: none;
+    
+
+}
